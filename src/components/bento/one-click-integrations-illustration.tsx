@@ -26,7 +26,7 @@ const OneClickIntegrationsIllustration: React.FC<OneClickIntegrationsIllustratio
       height: "60px",
       position: "relative",
       borderRadius: "9px",
-      border: `1px ${themeVars["--oci-border-color"]} solid`,
+      border: `1px solid`,
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
@@ -45,8 +45,8 @@ const OneClickIntegrationsIllustration: React.FC<OneClickIntegrationsIllustratio
     }
 
     if (isGradientBg) {
-      boxStyle.background = `linear-gradient(180deg, ${themeVars["--oci-gradient-light-gray-start"]} 0%, ${themeVars["--oci-gradient-light-gray-end"]} 100%)`
-      boxStyle.boxShadow = `0px 1px 2px ${themeVars["--oci-shadow-color"]}`
+      boxStyle.background = `linear-gradient(180deg, #000000 0%, #000000 100%)`
+      boxStyle.boxShadow = `0px 1px 2px #000000`
       boxStyle.backdropFilter = "blur(18px)"
       boxStyle.padding = "6px 8px"
     }
@@ -214,11 +214,11 @@ const OneClickIntegrationsIllustration: React.FC<OneClickIntegrationsIllustratio
           top: "24px",
           position: "absolute",
           background: `radial-gradient(ellipse 103.87% 77.04% at 52.56% -1.80%, 
-            ${themeVars["--oci-foreground-color"]}00 0%, 
-            ${themeVars["--oci-foreground-color"]}F5 15%, 
-            ${themeVars["--oci-foreground-color"]}66 49%, 
-            ${themeVars["--oci-foreground-color"]}F5 87%, 
-            ${themeVars["--oci-foreground-color"]}00 100%)`,
+            #00000000 0%, 
+            #000000F5 15%, 
+            #00000066 49%, 
+            #000000F5 87%, 
+            #00000000 100%)`,
         }}
       />
 
