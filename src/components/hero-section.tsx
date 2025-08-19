@@ -8,11 +8,11 @@ import { GradientBg } from "./ui/gradientBg"
 export function HeroSection() {
   return (
     <section
-      className="relative mx-auto my-6 w-full h-[560px] md:h-[680px] lg:h-[760px] overflow-hidden rounded-2xl"
+      className="flex relative mx-auto my-6 w-full h-[560px] md:h-[680px] lg:h-[760px] overflow-hidden rounded-2xl"
     >
       <GradientBg />  
 
-      <div className="relative z-10 grid h-full grid-cols-1 lg:grid-cols-2">
+      <div className="relative z-10 h-full flex">
         <div className="flex flex-col items-center lg:items-start justify-center gap-4 px-6 md:px-10 lg:px-14">
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-center lg:text-left">
             ¿Te apasionan los deportes?
@@ -52,7 +52,7 @@ export function HeroSection() {
         </div>
 
         <div className="relative hidden lg:block">
-          <div className="absolute inset-0 flex items-end justify-center pr-6 pb-8">
+          <div className="absolute inset-0 flex items-end justify-center pb-8">
             <div className="relative w-[540px] h-[660px] rounded-2xl overflow-hidden ring-1 ring-white/15 shadow-2xl
                             [mask-image:linear-gradient(to_bottom,black,black,transparent)]">
               <Image

@@ -5,9 +5,10 @@ import { AnimatedSection } from "@/components/animated-section"
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-background relative overflow-hidden pb-0">
+    <div className="min-h-screen bg-background pb-0 px-2">
       <div className="relative z-10">
-        <main className="max-w-[1320px] mx-4 lg:mx-auto relative">
+        {/* centrar el contenido */}
+        <main className="max-w-[1320px] mx-auto relative">
           <HeroSection />
         </main>
         <AnimatedSection
