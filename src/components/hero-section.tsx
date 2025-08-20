@@ -7,10 +7,10 @@ import { CheckIcon } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative mx-auto my-6 w-full overflow-hidden rounded-2xl h-full min-h-[720px]">
+    <section className="relative mx-auto my-6 w-full overflow-hidden rounded-2xl h-full min-h-screen">
       <GradientBg />
 
-      <div className="relative z-10 grid h-full grid-rows-[auto_1fr_auto] lg:grid-rows-1 lg:grid-cols-2 min-h-[720px]">
+      <div className="relative z-10 grid h-full grid-rows-[auto_1fr_auto] lg:grid-rows-1 lg:grid-cols-2 min-h-screen">
         {/* Texto */}
         <div className="order-1 pt-8 md:pt-0 flex flex-col items-center lg:items-start justify-center gap-4 px-6 md:px-10 lg:px-8">
           <h1 className="text-white text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight text-center lg:text-left">
