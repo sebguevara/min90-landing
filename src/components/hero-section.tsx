@@ -7,13 +7,12 @@ import { CheckIcon } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative mx-auto my-6 w-full overflow-hidden rounded-2xl h-[620px] md:h-[720px] lg:h-[760px]">
+    <section className="relative mx-auto my-6 w-full overflow-hidden rounded-2xl h-full min-h-[720px]">
       <GradientBg />
 
-      {/* Layout responsivo: stack en mobile, dos columnas en desktop */}
-      <div className="relative z-10 grid h-full grid-rows-[auto_1fr_auto] lg:grid-rows-1 lg:grid-cols-2">
+      <div className="relative z-10 grid h-full grid-rows-[auto_1fr_auto] lg:grid-rows-1 lg:grid-cols-2 min-h-[720px]">
         {/* Texto */}
-        <div className="order-1 pt-4 md:pt-0 flex flex-col items-center lg:items-start justify-center gap-4 px-6 md:px-10 lg:px-8">
+        <div className="order-1 pt-8 md:pt-0 flex flex-col items-center lg:items-start justify-center gap-4 px-6 md:px-10 lg:px-8">
           <h1 className="text-white text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight text-center lg:text-left">
             Transforma tu pasión deportiva con Minuto 90
           </h1>
@@ -60,7 +59,7 @@ export function HeroSection() {
         <div className="order-2 lg:order-none relative flex items-end justify-center pt-4 md:pt-0 pb-4 md:pb-8">
           <div
             className="
-              relative w-[70%] md:w-[88%] max-w-[560px]
+              relative w-[70%] lg:w-[88%] max-w-[560px]
               h-[260px] sm:h-[320px] md:h-[420px] lg:h-[660px]
               rounded-2xl overflow-hidden ring-1 ring-white/15 shadow-2xl
               [mask-image:linear-gradient(to_bottom,black,black,transparent)]
