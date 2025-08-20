@@ -91,3 +91,46 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes border-spin {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Contenedor del botón con borde animado */
+.button-border-animated {
+  position: relative;
+  display: inline-block;
+  border-radius: 9999px; /* full rounded */
+  padding: 1px; /* grosor del borde */
+  background: linear-gradient(270deg, #960f52, #ff8c00, #40e0d0, #960f52);
+  background-size: 600% 600%;
+  animation: border-spin 10s linear infinite;
+}
+
+/* Fondo del botón */
+.button-border-animated .inner-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  border-radius: 9999px;
+  padding: 12px 32px;
+  border-width: 1px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.5s;
+}
+
+.button-border-animated .inner-btn:hover {
+  background-color: #f3f3f3;
+}
+

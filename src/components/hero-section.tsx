@@ -1,48 +1,53 @@
-// components/HeroSection.tsx
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { GradientBg } from "./ui/gradientBg"
+import { CheckIcon } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section
-      className="flex relative mx-auto my-6 w-full h-[560px] md:h-[680px] lg:h-[760px] overflow-hidden rounded-2xl"
-    >
-      <GradientBg />  
+    <section className="relative mx-auto my-6 w-full overflow-hidden rounded-2xl h-[620px] md:h-[720px] lg:h-[760px]">
+      <GradientBg />
 
-      <div className="relative z-10 h-full flex">
-        <div className="flex flex-col items-center lg:items-start justify-center gap-4 px-6 md:px-10 lg:px-14">
-          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-center lg:text-left">
-            ¿Te apasionan los deportes?
+      {/* Layout responsivo: stack en mobile, dos columnas en desktop */}
+      <div className="relative z-10 grid h-full grid-rows-[auto_1fr_auto] lg:grid-rows-1 lg:grid-cols-2">
+        {/* Texto */}
+        <div className="order-1 pt-4 md:pt-0 flex flex-col items-center lg:items-start justify-center gap-4 px-6 md:px-10 lg:px-8">
+          <h1 className="text-white text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight text-center lg:text-left">
+            Transforma tu pasión deportiva con Minuto 90
           </h1>
 
           <p className="text-white/90 text-base md:text-lg lg:text-xl max-w-xl text-center lg:text-left">
-            Únete a nuestra comunidad y accede a <strong>análisis deportivos de calidad</strong>.
+          ¡Prueba gratis esta semana!
           </p>
 
           <ul className="mt-2 space-y-2 text-white/90 text-sm md:text-base">
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 inline-block size-2 rounded-full bg-white/90" />
+            <li className="flex items-center gap-2">
+              <CheckIcon size={12} className="inline-block rounded-full bg-green-500 text-white" />
               <span>Análisis deportivos diarios</span>
             </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 inline-block size-2 rounded-full bg-white/90" />
+            <li className="flex items-center gap-2">
+              <CheckIcon size={12} className="inline-block rounded-full bg-green-500 text-white" />
               <span>Comunidad privada y activa</span>
             </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 inline-block size-2 rounded-full bg-white/90" />
+            <li className="flex items-center gap-2">
+              <CheckIcon size={12} className="inline-block rounded-full bg-green-500 text-white" />
               <span>Contenido educativo y entretenido</span>
             </li>
           </ul>
 
           <div className="mt-4">
-            <Link href="https://t.me/tu_grupo_telegram" target="_blank" rel="noopener noreferrer">
-              <Button className="rounded-full px-8 py-6 text-base font-medium shadow-lg ring-1 ring-white/20
-                                 bg-white text-black hover:bg-white/90">
-                Solicitar acceso
-              </Button>
+            <Link
+              href="https://t.me/tu_grupo_telegram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="button-border-animated shadow-lg">
+                <Button className="inner-btn">
+                  Prueba gratis esta semana
+                </Button>
+              </div>
             </Link>
           </div>
 
@@ -51,18 +56,23 @@ export function HeroSection() {
           </p>
         </div>
 
-        <div className="relative hidden lg:block">
-          <div className="absolute inset-0 flex items-end justify-center pb-8">
-            <div className="relative w-[540px] h-[660px] rounded-2xl overflow-hidden ring-1 ring-white/15 shadow-2xl
-                            [mask-image:linear-gradient(to_bottom,black,black,transparent)]">
-              <Image
-                src="/images/img.png" // pon tu imagen aquí
-                alt="Jugador de fútbol"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
+        {/* Imagen: visible SIEMPRE, centrada en mobile como en el mock */}
+        <div className="order-2 lg:order-none relative flex items-end justify-center pt-4 md:pt-0 pb-4 md:pb-8">
+          <div
+            className="
+              relative w-[70%] md:w-[88%] max-w-[560px]
+              h-[260px] sm:h-[320px] md:h-[420px] lg:h-[660px]
+              rounded-2xl overflow-hidden ring-1 ring-white/15 shadow-2xl
+              [mask-image:linear-gradient(to_bottom,black,black,transparent)]
+            "
+          >
+            <Image
+              src="/images/img.png" // tu imagen
+              alt="Jugador de fútbol"
+              fill
+              className="object-cover object-top md:object-center"
+              priority
+            />
           </div>
         </div>
       </div>
