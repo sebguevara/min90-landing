@@ -1,19 +1,21 @@
-"use client"
-
+"use client";
+import Link from "next/link";
 
 export function FooterSection() {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="w-full max-w-[1320px] mx-auto px-5 flex flex-col md:flex-row justify-between items-start gap-8 md:gap-0 py-10 md:py-[70px]">
-      <div className="flex flex-col justify-start items-start gap-8 p-4 md:p-8">
-        <div className="flex gap-3 items-stretch justify-center">
-          <div className="text-center text-foreground text-xl font-semibold leading-4">Minuto 90</div>
+    <footer className="w-full border-t border-border">
+      <div className="mx-auto px-5 py-10 flex flex-col items-center gap-6">
+        <p className="text-xs text-muted-foreground text-center max-w-[700px] leading-relaxed mt-4">
+          ⚠️ El juego puede ser adictivo. Juega con responsabilidad. Este servicio no garantiza resultados y no debe considerarse asesoramiento financiero.
+          Prohibido para menores de 18 años. Consulta las leyes locales antes de participar.
+        </p>
+
+        <div className="text-xs text-muted-foreground text-center mt-2">
+          © {year} Minuto 90. Todos los derechos reservados.
         </div>
-        <p className="text-foreground/90 text-sm font-medium leading-[18px] text-left">Análisis deportivos</p>
-        <div className="flex justify-start items-start gap-3">
-        </div>
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 p-4 md:p-8 w-full md:w-auto">
       </div>
     </footer>
-  )
+  );
 }

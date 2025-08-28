@@ -48,15 +48,13 @@ const BentoCard = ({ title, description, points }: Item) => (
 export function BentoSection() {
   return (
     <section className="w-full px-5 flex flex-col items-center">
-      {/* Heading */}
       <div className="py-10 md:py-14 text-center">
-        <h2 className="text-4xl md:text-6xl font-semibold leading-tight">Únete a nuestra comunidad deportiva</h2>
-        <p className="mt-3 max-w-[640px] mx-auto text-base md:text-xl text-muted-foreground">
+        <h2 className="text-2xl md:text-6xl font-semibold text-foreground dark:text-white leading-tight">Únete a nuestra comunidad deportiva</h2>
+        <p className="mt-3 max-w-[640px] mx-auto text-sm md:text-xl text-muted-foreground">
           Disfruta de análisis, comunidad y contenido exclusivo pensado para fanáticos como vos.
         </p>
       </div>
 
-      {/* Grid de Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-[1220px]">
         {items.map((it) => (
           <BentoCard key={it.title} {...it} />
