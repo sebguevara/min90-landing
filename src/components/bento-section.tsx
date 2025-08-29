@@ -21,6 +21,11 @@ const items: Item[] = [
     description: "Aprende táctica y estrategia de forma simple.",
     points: ["🧠 Notas de expertos", "📝 Explicaciones simples", "🎧 Videos y podcasts"],
   },
+  {
+    title: "Recargas y retiros",
+    description: "Cajero autorizado para servicio de recargas y retiros",
+    points: ["💳 Recargas", "💰 Retiros", "💵 Servicio disponible"],
+  }
 ]
 
 const BentoCard = ({ title, description, points }: Item) => (
@@ -55,7 +60,7 @@ export function BentoSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-[1220px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1220px]">
         {items.map((it) => (
           <BentoCard key={it.title} {...it} />
         ))}
