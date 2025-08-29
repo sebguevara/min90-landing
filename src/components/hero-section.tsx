@@ -50,7 +50,7 @@ export function HeroSection() {
 
           <div className="mt-4">
             <Link
-              href="https://t.me/tu_grupo_telegram"
+              href="https://t.me/+n_aGvKVcQYk0NTFh"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,7 +72,7 @@ export function HeroSection() {
         <div className="order-2 lg:order-none relative flex items-end justify-center pt-4 md:pt-0 md:pb-8">
           <div
             className="
-              relative w-[80%] lg:w-[88%] max-w-[560px] h-[320px] md:h-[420px] lg:h-[660px]
+              relative w-[70%] lg:w-[88%] max-w-[560px] h-[320px] md:h-[420px] lg:h-[660px]
               rounded-2xl overflow-hidden ring-1 ring-white/15 shadow-2xl
               [mask-image:linear-gradient(to_bottom,black,black,transparent)]
             "
