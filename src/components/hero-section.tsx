@@ -4,10 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { GradientBg } from "./ui/gradientBg";
 import { CheckIcon } from "lucide-react";
-import {
-  Card,
-  CardContent,
-} from "./ui/card";
+import { Card, CardContent } from "./ui/card";
 
 export function HeroSection() {
   return (
@@ -37,6 +34,12 @@ export function HeroSection() {
                 <div className="flex items-center justify-center bg-primary rounded-full p-1">
                   <CheckIcon size={12} className="inline-block text-white" />
                 </div>
+                <span>Recargas y retiros</span>
+              </li>
+              <li className="flex items-center text-xs md:text-base gap-2">
+                <div className="flex items-center justify-center bg-primary rounded-full p-1">
+                  <CheckIcon size={12} className="inline-block text-white" />
+                </div>
                 <span>Comunidad privada y activa</span>
               </li>
               <li className="flex items-center text-xs md:text-base gap-2">
@@ -50,12 +53,14 @@ export function HeroSection() {
 
           <div className="mt-4">
             <Link
-              href="https://t.me/+n_aGvKVcQYk0NTFh"
+              href="https://whatsapp.com/channel/0029Vb6hp6k1XquWY9AZ1d0J"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="button-border-animated shadow-lg">
-                <Button className="inner-btn bg-white text-black">Prueba gratis esta semana</Button>
+                <Button className="inner-btn bg-white text-black">
+                  Prueba gratis esta semana
+                </Button>
               </div>
             </Link>
           </div>
