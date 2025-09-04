@@ -17,16 +17,7 @@ export default function RootLayout({
   return (
     <>
       <html lang="es" suppressHydrationWarning>
-        <body>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
-
+        <head>
           <Script
             id="meta-pixel"
             strategy="afterInteractive"
@@ -45,6 +36,16 @@ export default function RootLayout({
               `,
             }}
           />
+        </head>
+        <body>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
           <noscript>
             <img
               height="1"
