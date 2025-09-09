@@ -56,7 +56,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="w-full px-5 overflow-hidden flex flex-col justify-start py-6 md:py-8 lg:py-14">
+    <section className="w-full px-2 overflow-hidden flex flex-col justify-start py-6 md:py-8 lg:py-14">
       <div className="self-stretch py-6 md:py-8 lg:py-14 flex flex-col justify-center items-center gap-2">
         <div className="flex flex-col justify-start items-center gap-4">
           <h2 className="text-center text-foreground dark:text-white text-2xl md:text-6xl font-semibold leading-tight">

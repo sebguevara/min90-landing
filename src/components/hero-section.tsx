@@ -5,11 +5,13 @@ import { Button } from "@/components/ui/button";
 import { GradientBg } from "./ui/gradientBg";
 import { CheckIcon } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
+import { Header } from "./header";
 
 export function HeroSection() {
   return (
-    <section className="relative mx-auto pt-6 w-full overflow-hidden h-screen md:h-full min-h-[730px]">
+    <section className="relative mx-auto pt-9 sm:pt-6 w-full overflow-hidden h-screen md:h-full min-h-[730px]">
       <GradientBg />
+      <Header />
 
       <div className="relative z-10 grid h-full grid-rows-[auto_1fr_auto] lg:grid-rows-1 lg:grid-cols-2 min-h-[730px]">
         {/* Texto */}
@@ -22,7 +24,7 @@ export function HeroSection() {
             ¡Prueba gratis esta semana!
           </p>
 
-          <Card className="bg-foreground/60 p-2 my-2 shadow-lg">
+          <Card className="bg-foreground/60 p-2 my-2 shadow-lg sm:w-full">
             <CardContent className="mt-2 space-y-2 text-white/90 text-sm md:text-base">
               <li className="flex items-center text-xs md:text-base gap-2">
                 <div className="flex items-center justify-center bg-primary rounded-full p-1">
@@ -51,17 +53,23 @@ export function HeroSection() {
             </CardContent>
           </Card>
 
-          <div className="mt-4">
+          <div className="mt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-evenly gap-4 w-full ">
             <Link
               href="https://whatsapp.com/channel/0029Vb6hp6k1XquWY9AZ1d0J"
               target="_blank"
               rel="noopener noreferrer"
+              className="min-w-64 text-center bg-white text-black px-4 py-2 rounded-lg font-semibold shadow-lg hover:bg-white/90 transition-colors duration-300"
             >
-              <div className="button-border-animated shadow-lg">
-                <Button className="inner-btn bg-white text-black">
-                  Prueba gratis esta semana
-                </Button>
-              </div>
+              Prueba gratis esta semana
+            </Link>
+
+            <Link
+              href="https://minuto90.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="min-w-64 text-center bg-transparent border border-white/80 text-white hover:bg-white hover:text-black transition-colors duration-300 px-4 py-2 rounded-lg font-semibold"
+            >
+              Plataforma Minuto 90
             </Link>
           </div>
 
