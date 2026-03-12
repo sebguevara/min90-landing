@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Minuto 90",
   description: "Análisis deportivos",
   generator: "Minuto 90",
+  icons: {
+    icon: "/logos/minuto90.svg",
+  },
 };
 
 export default function RootLayout({
