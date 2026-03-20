@@ -5,7 +5,7 @@ import { TestimonialCard } from "./testimonial-card";
 const testimonials = [
   {
     quote:
-      "Los reportes diarios de Minuto 90 cambiaron por completo mi forma de analizar partidos. Ahora filtro mis picks por estadísticas clave y contexto, y logré mejorar mi tasa de aciertos de un 48% a un 56% en 6 semanas.",
+      "Los reportes diarios de Minuto 90 Score cambiaron por completo mi forma de analizar partidos. Ahora filtro mis picks por estadísticas clave y contexto, y logré mejorar mi tasa de aciertos de un 48% a un 56% en 6 semanas.",
     name: "Sofía Ramírez",
     company: "Córdoba, Argentina",
     type: "large-teal",
@@ -26,7 +26,7 @@ const testimonials = [
   },
   {
     quote:
-      "El análisis de tendencias que hacen en Minuto 90 me abrió los ojos. Antes seguía corazonadas, ahora respaldo mis decisiones con datos reales y proyecciones claras. Mi ROI mejoró un 7% en solo un mes.",
+      "El análisis de tendencias que hacen en Minuto 90 Score me abrió los ojos. Antes seguía corazonadas, ahora respaldo mis decisiones con datos reales y proyecciones claras. Mi ROI mejoró un 7% en solo un mes.",
     name: "Nicolás Torres",
     company: "Resistencia, Argentina",
     type: "small-dark",
@@ -40,14 +40,14 @@ const testimonials = [
   },
   {
     quote:
-      "La mejor parte es la comunidad. Los debates en vivo sobre picks y tendencias me enseñaron a analizar mucho mejor. Minuto 90 es más que estadísticas, es aprendizaje colectivo.",
+      "La mejor parte es la comunidad. Los debates en vivo sobre picks y tendencias me enseñaron a analizar mucho mejor. Minuto 90 Score es más que estadísticas, es aprendizaje colectivo.",
     name: "Fernando Gómez",
     company: "Medellín, Colombia",
     type: "small-dark",
   },
   {
     quote:
-      "Con Minuto 90 dejé de perder tiempo saltando entre varias apps y hojas de cálculo. Ahora tengo todo centralizado: estadísticas, predicciones y comunidad en un solo lugar. Se nota el salto de calidad.",
+      "Con Minuto 90 Score dejé de perder tiempo saltando entre varias apps y hojas de cálculo. Ahora tengo todo centralizado: estadísticas, predicciones y comunidad en un solo lugar. Se nota el salto de calidad.",
     name: "Valentina Herrera",
     company: "Buenos Aires, Argentina",
     type: "large-teal",
@@ -64,7 +64,7 @@ export function TestimonialsSection() {
           </h2>
           <p className="self-stretch text-center text-muted-foreground text-sm md:text-xl max-w-[600px] leading-relaxed">
             Historias de usuarios que mejoraron su análisis deportivo y gestión
-            de riesgo con <span className="text-primary">Minuto 90</span>.
+            de riesgo con <span className="text-primary">Minuto 90 Score</span>.
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ export function FooterSection() {
         </p>
 
         <div className="text-xs text-muted-foreground text-center mt-2">
-          © {year} Minuto 90. Todos los derechos reservados.
+          © {year} Minuto 90 Score. Todos los derechos reservados.
         </div>
       </div>
     </footer>

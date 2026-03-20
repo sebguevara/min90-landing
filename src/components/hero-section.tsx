@@ -17,7 +17,7 @@ export function HeroSection() {
         {/* Texto */}
         <div className="order-1 pt-8 md:pt-0 flex flex-col items-center lg:items-start justify-center gap-4 px-6 md:px-10 lg:px-8">
           <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-center lg:text-left">
-            Transforma tu pasión deportiva con Minuto 90
+            Transforma tu pasión deportiva con Minuto 90 Score
           </h1>
 
           <p className="text-white/90 text-base md:text-lg lg:text-xl max-w-xl text-center lg:text-left">
@@ -64,12 +64,12 @@ export function HeroSection() {
             </Link>
 
             <Link
-              href="https://minuto90.co"
+              href="https://minuto90score.com"
               target="_blank"
               rel="noopener noreferrer"
               className="min-w-64 text-center bg-transparent border border-white/80 text-white hover:bg-white hover:text-black transition-colors duration-300 px-4 py-2 rounded-lg font-semibold"
             >
-              Plataforma Minuto 90
+              Plataforma Minuto 90 Score
             </Link>
           </div>
 

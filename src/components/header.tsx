@@ -26,8 +26,8 @@ export const Header = () => {
         <div className="relative w-16 h-12">
           <Link href="/" aria-label="Volver al inicio">
             <Image
-              src="/logos/minuto90.svg"
-              alt="Minuto 90 Logo"
+              src="/logos/minuto90score.png"
+              alt="Minuto 90 Score Logo"
               fill
               sizes="120px"
               className="object-contain"
@@ -46,7 +46,7 @@ export const Header = () => {
             Prueba Gratuita
           </Link>
           <Link
-            href="https://minuto90.co"
+            href="https://minuto90score.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-center bg-white text-black px-3 py-1.5 text-xs md:text-sm rounded-md font-semibold shadow-lg hover:bg-white/90 transition-colors duration-300"
