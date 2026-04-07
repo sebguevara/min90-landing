@@ -55,7 +55,7 @@ export function HeroSection() {
 
           <div className="mt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-evenly gap-4 w-full ">
             <Link
-              href="https://t.me/+oPoqpWhIfzgwYjk5"
+              href="https://t.me/+BuSzupq2GZ8xMTcx"
               target="_blank"
               rel="noopener noreferrer"
               className="min-w-64 text-center bg-white text-black px-4 py-2 rounded-lg font-semibold shadow-lg hover:bg-white/90 transition-colors duration-300"

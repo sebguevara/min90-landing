@@ -38,7 +38,7 @@ export const Header = () => {
 
         <nav className="flex items-center gap-2 md:gap-4">
           <Link
-            href="https://t.me/+oPoqpWhIfzgwYjk5"
+            href="https://t.me/+BuSzupq2GZ8xMTcx"
             target="_blank"
             rel="noopener noreferrer"
             className="text-center bg-transparent border border-white/80 text-white hover:bg-white hover:text-black transition-colors duration-300 px-3 py-1.5 text-xs md:text-sm rounded-md font-semibold"
